@@ -20,8 +20,16 @@ def myfunc_a(x, y):
     return x + y
 
 
+def myfunc_b(x, y):
+    '''
+    Docstring for this function
+    '''
+    return x - y
+
+
 # main script for execution
 if __name__ == '__main__':
     x, y = 3, 5
-    out = myfunc_a(x, y)
-    print(out)
+    out1 = myfunc_a(x, y)
+    out2 = myfunc_b(x, y)
+    print(out1, out2)

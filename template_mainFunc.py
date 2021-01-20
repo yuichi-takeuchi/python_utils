@@ -20,11 +20,22 @@ def myfunc_a(x, y):
     return x + y
 
 
+def myfunc_b(x, y):
+    '''
+    Docstring for this function
+    '''
+    return x - y
+
+
 def main():
+    '''
+    Docstring for this function
+    '''
     x, y = 3, 5
-    out = myfunc_a(x, y)
-    print(out)
-    return out
+    mainFunc_out1 = myfunc_a(x, y)
+    mainFunc_out2 = myfunc_b(x, y)
+    print(mainFunc_out1, mainFunc_out2)
+    return mainFunc_out1, mainFunc_out2
 
 
 # main procedure when called
